@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Students Login Failed</title>
+<style>
+Body {
+	font-family: Calibri, Helvetica, sans-serif;
+	background-image: url(home1.png);
+	background-size: 100%;
+	background-repeat: no-repeat;
+}
+
+button {
+	background-color: rgb(232, 245, 53);
+	width: 100%;
+	height: 30px;
+	color: green;
+	padding: 15x;
+	margin: 10x 0px;
+	border: none;
+	cursor: poiter;
+	font-weight: bolder;
+}
+
+input[type=text], input[type=password] {
+	width: 100%;
+	margin: 8px 0;
+	padding: 12px 20px;
+	diplay: inline-block;
+	border: 1px solid purple;
+	box-sizing: border-box;
+}
+
+button:hover {
+	opacity: 0.7;
+}
+
+.cancelButton {
+	width: auto;
+	padding: 10px 30px;
+	margin: 10px 55px;
+	color: red;
+}
+
+.container {
+	padding: 20px;
+	padding-bottom: 30px;
+	background-color: rgb(186, 208, 211);
+	width: 35%;
+	border: 1px solid lightblue;
+	margin: auto;
+}
+
+h2 {
+	text-align: center;
+}
+
+th {
+	background-color: red;
+}
+
+table {
+	background-color: white;
+}
+
+.top {
+	padding: 5px;
+	text-decoration: none;
+	background-color: rgb(236, 21, 21);
+}
+
+.top a {
+	text-decoration: none;
+	font-weight: bolder;
+	padding: 20px;
+	color: white;
+	padding-bottom: 30px;
+}
+</style>
+</head>
+<body>
+
+
+	
+	<center>
+		<h2 style="color: red;">Login Failed..!</h2>
+	</center>
+
+
+	<form method="post" action="StudentLoginAction.jsp">
+
+		<div class="container">
+			<label>Username:</label> <input type="text"
+				placeholder="Enter Password" name="t8"> <label>Password:</label>
+			<input type="password" placeholder="Enter password" name="t9">
+			<button type="submit">Login</button>
+			<a href="RegisterStudent.html" style="text-decoration: none;">Register
+				Now</a>
+
+			<button type="button" class="cancelButton">
+				<a href="Home.html" style="text-decoration: none; color: red;">Cancel</a>
+			</button>
+			<a href="####" style="text-decoration: none;">forget password</a>
+
+		</div>
+	</form>
+</body>
+</html>

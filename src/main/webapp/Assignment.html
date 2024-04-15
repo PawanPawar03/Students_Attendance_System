@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Submit Assignment</title>
+
+
+<style>
+Body {
+	font-family: Calibri, Helvetica, sans-serif;
+	background-image: url(home1.png);
+	background-size: 100%;
+	background-repeat: no-repeat;
+}
+
+button {
+	background-color: rgb(232, 245, 53);
+	width: 100%;
+	height: 30px;
+	color: green;
+	padding: 15x;
+	margin: 10x 0px;
+	border: none;
+	cursor: poiter;
+	font-weight: bolder;
+}
+
+input[type=text], input[type=file] {
+	width: 50%;
+	margin: 8px 0;
+	padding: 12px 20px;
+	diplay: inline-block;
+	border: 1px solid purple;
+	box-sizing: border-box;
+}
+
+label:hover {
+	opacity: 0.7;
+}
+
+.cancelButton {
+	width: auto;
+	padding: 10px 30px;
+	margin: 10px 55px;
+	color: red;
+}
+
+.container {
+	padding: 20px;
+	padding-bottom: 30px;
+	background-color: rgb(186, 208, 211);
+	width: 35%;
+	border: 1px solid lightblue;
+	margin: auto;
+}
+
+h2 {
+	text-align: center;
+}
+
+th {
+	background-color: red;
+}
+
+table {
+	background-color: white;
+}
+
+.top {
+	padding: 5px;
+	text-decoration: none;
+	background-color: rgb(236, 21, 21);
+}
+
+.top a {
+	text-decoration: none;
+	font-weight: bolder;
+	padding: 20px;
+	color: white;
+	padding-bottom: 30px;
+}
+</style>
+</head>
+<body>
+	<center>
+		<h1>Students Attendance System</h1>
+	</center>
+	<div class="top">
+
+		<a href="studentsIndex.jsp">Home</a> <a href="Attedance.jsp">Submit
+			Attendance</a> <a href="Assignment.html">Submit Assignment</a> <a
+			href="logout.html">Logout</a>
+	</div>
+	<br>
+	<h2>Students Assignments</h2>
+	>
+	<form action="AssignmentServlet" method="post"
+		enctype="multipart/form-data">
+		<div class="container">
+			<label for="student_name">Student Name:</label> <input type="text"
+				id="student_name" required name="student_name"><br>
+			<br> <label for="student_id">Student ID No:</label> <input
+				type="text" id="student_id" required name="student_id"><br>
+			<br> <label for="assignment_file">Assignment File:</label> <input
+				type="file" id="assignment_file" required name="assignment_file"><br>
+			<br>
+			<center>
+
+				<input type="submit" value="Submit">
+			</center>
+	</form>
+	</div>
+</body>
+</html>

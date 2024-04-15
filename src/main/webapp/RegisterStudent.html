@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Students Registration</title>
+<style>
+Body {
+	font-family: Calibri, Helvetica, sans-serif;
+	background-image: url(home1.png);
+	background-size: 100%;
+	background-repeat: no-repeat;
+}
+
+button {
+	background-color: rgb(232, 245, 53);
+	width: 100%;
+	height: 30px;
+	color: green;
+	padding: 15x;
+	margin: 10x 0px;
+	border: none;
+	cursor: poiter;
+	font-weight: bolder;
+}
+
+input[type=text], input[type=password] {
+	width: 100%;
+	margin: 8px 0;
+	padding: 12px 20px;
+	diplay: inline-block;
+	border: 1px solid purple;
+	box-sizing: border-box;
+}
+
+button:hover {
+	opacity: 0.7;
+}
+
+.cancelButton {
+	width: auto;
+	padding: 10px 30px;
+	margin: 10px 55px;
+	color: red;
+}
+
+.container {
+	padding: 20px;
+	padding-bottom: 30px;
+	background-color: rgb(186, 208, 211);
+	width: 35%;
+	border: 1px solid lightblue;
+	margin: auto;
+}
+
+h2 {
+	text-align: center;
+}
+</style>
+</head>
+<body>
+
+
+
+	<center>
+		<h2>Register Here..</h2>
+
+	</center>
+
+
+	<form method="post" action="RegisterAction.jsp">
+
+		<div class="container">
+			<label>First Name:</label> <input type="text" required name="t1">
+
+			<label>Middle Name:</label> <input type="text" required name="t2">
+
+			<label>Last Name:</label> <input type="text" required name="t3">
+
+			<label>Email:</label> <input type="text" required name="t4">
+
+			<label>Class:</label> <input type="text" required name="t5">
+
+			<label>Student Id:</label> <input type="text" required name="t6">
+
+			<label>Branch:</label> <input type="text" required name="t7">
+
+			<label>Username:</label> <input type="text"
+				placeholder="Enter Username" required name="t8"> <label>Password:</label>
+			<input type="password" placeholder="Enter password" required
+				name="t9">
+
+			<button type="submit">Register</button>
+
+			<button type="button" class="cancelButton">
+
+				<a href="StudentLogin.html"
+					style="text-decoration: none; color: red;">Cancel</a>
+			</button>
+
+
+		</div>
+	</form>
+</body>
+</html>
